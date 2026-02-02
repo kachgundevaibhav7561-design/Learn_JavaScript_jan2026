@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arr element</title>
+</head>
+
+<body>
+    <script>
+        //array modify and Delete//
+        var a = ["Raj", "23", "yogesh", "shivani"];
+
+        document.write(a, "<br>");
+
+        a[1] = 55;//update the value
+        document.write(a, "<br>")
+        delete a[3];
+        document.write(a, "<br>");//delete index value
+    </script>
+
+    <script>
+        //sorting and reverse//
+        var b = ["vaibhav", "yogesh", "shivani", "Neha", "sahil", "sukanya"];
+        document.write(b, "<br>");
+        b.sort();//a to z
+        document.write(b, "<br>");
+        b.reverse();//reverse
+        document.write(b, "<br>");
+
+    </script>
+    <script>
+        //pop push//
+        var c = ["vaibhav", "yogesh", "shivani", "Neha", "sahil", "sukanya"];
+        document.write(c, "<br>");
+        c.pop();
+        c.pop();
+        c.pop();
+
+        //push
+        document.write(c, "<br>");
+        c.push("kirti");
+        c.push("Ravan");
+        c.push("Meghanath");
+        document.write(c, "<br>");
+
+
+
+    </script>
+    <script>
+        //shift unshift
+
+        var d = [12, 23, 45, 67, 54, 77];
+        document.write(d, "<br>");
+        d.shift();
+        d.shift();
+        document.write(d, "<br>");
+        //add element
+        d.unshift(100);
+        d.unshift(123);
+        document.write(d, "<br>");
+    </script>
+    <script>
+        //concat// join.
+        var e = [12, 23, 45, 67, 54, 77];
+        var f = [100, 450, 550, 660, 777, 888];
+        var g = [78, 78, 78, 78];
+        var h;
+        var g = e.concat(f,g);
+        document.write(g, "<br>");
+        var h = g.join("/");
+        document.write(h, "<br>");
+
+
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calci</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <style>
+            .bbb{
+                background-color:yellowgreen;
+            }
+        </style>
+</head>
+
+<body>
+
+    <div class="container mt-5 border border-success bbb">
+        <div class="row">
+            <h1 class="text-center">calculator</h1>
+            <div class="col-md-6">
+                <form name="myForm">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label for="exampleInputEmail1" class="form-label fs-3 text">Enter Number1</label>
+                            <input type="number"name="n1" class="form-control mb-5 fs-3 text" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="enter number">
+                        </div>
+                        <div class="col-md-12">
+                            <label for="exampleInputEmail1" class="form-label fs-3 text">Enter Number2</label>
+                            <input type="number" name="n2" class="form-control mb-5 fs-3 text" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="enter number">
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <button type="button" onclick="addition()"  class="btn btn-success mb-3 fs-3 text">+</button>
+                            </div>
+                            <div class="col-md-3">
+                                <button type="button" onclick="substract()" class="btn btn-success mb-3 fs-3 text">-</button>
+                            </div>
+                            <div class="col-md-3">
+                                <button type="button" onclick="multiply()" class="btn btn-success mb-3 fs-3 text">*</button>
+                            </div>
+                            <div class="col-md-3">
+                                <button type="button" onclick="divide()" class="btn btn-success mb-3 fs-3 text">/</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" onclick="reset()" class="btn btn-success mb-5 fs-3 text mt-3">Reset</button>
+                            </div>
+                            <div>
+                                <label for="exampleInputEmail1" class="form-label fs-3 text ">Result</label>
+                                <input type="number" name="res" class="form-control mb-5 fs-3 text" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder=" Result">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+        <script src="js/calcli.js"></script>
+</body>
+
+</html>

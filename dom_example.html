@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+    <style>
+        body{
+            background-color: white;
+            color: black;
+        }
+        .dark-mode{
+            background-color: black;
+            color: white;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- example 1 -->
+    <h1>change text using Dom</h1>
+    <h2 id="title">Old heading</h2>
+    <button onclick="changeText()"> clcik here to change text</button>
+
+    <!-- example 2 -->
+    <h1>change style color using dom</h1>
+    <h2 id="msg">Welcome to pune</h2>
+    <button onclick="changeColor()"> change color</button>
+
+    <!-- example 3 -->
+    <h1>change image use Dom</h1>
+    <img src="images/coan.webp" alt="coan" id="myimg" width="400">
+    <button onclick="changeImage()">Click to change</button>
+
+    <!-- example 4 -->
+    <h1>Input from user</h1>
+    <input type="text" id="nameInput" placeholder="Enetr name" />
+    <button onclick="ShowName()">Submit</button>
+    <h1 id="output"></h1>
+
+    <!-- example5 -->
+    <h1>Delete line</h1>
+    <p id="deleteme">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum assumenda possimus debitis ut
+        voluptate quisquam reiciendis laudantium amet ab. Laborum dolor vitae quam fugiat, voluptate porro quod. Esse,
+        voluptatibus accusantium! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos recusandae,
+        voluptates exercitationem, quas a iusto impedit, porro veniam numquam minus facere reiciendis animi distinctio
+        molestias expedita sint dolore minima harum? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero
+        repellat quisquam neque sunt, alias non doloribus perspiciatis necessitatibus ipsa excepturi assumenda et sint
+        earum veniam facilis voluptatum repudiandae. Eaque, adipisci.</p>
+
+    <button onclick="removepara()">Remove</button>
+
+    <!-- example 6 -->
+    <p id="para1"> Change my font size</p>
+    <button onclick="increase()">+</button>
+    <button onclick="decrease()">-</button>
+
+    <!-- example6 -->
+     <button onclick="toggleTheme()">toggle theme</button>
+     <h2>Welcome to Pune</h2>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ut, distinctio voluptate commodi natus ipsum reprehenderit, est quisquam earum quidem ab enim aut magni fugiat temporibus soluta accusamus voluptatum quasi?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor excepturi, consectetur ipsam voluptates aliquid amet totam mollitia omnis possimus quibusdam, quaerat necessitatibus cumque asperiores nobis qui modi officiis neque labore? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis vero autem libero deleniti impedit. In autem placeat dignissimos, error itaque labore iste libero iure, fugit fuga eos sapiente cum commodi!</p>
+
+
+
+
+
+
+
+    <script>
+        // ex1
+        function changeText() {
+            document.getElementById('title').innerHTML = "Vaibhav";
+        }
+    </script>
+    <script>
+        // ex2
+        function changeColor() {
+            document.getElementById('msg').style.color = "red";
+        }
+    </script>
+    <script>
+        // ex3
+        function changeImage() {
+            document.getElementById('myimg').src = 'images/sweet.jpg';
+        }
+    </script>
+    <script>
+        // ex4
+        function ShowName() {
+            let name = document.getElementById('nameInput').value;
+            document.getElementById('output').innerHTML = 'Hello Welcome to pune ' + name;
+
+        }
+    </script>
+    <script>
+        // ex5
+        function removepara() {
+            document.getElementById('deleteme').remove();
+        }
+    </script>
+    <script>
+        // ex6
+        let size = 16;
+        function increase() {
+            size++;
+            document.getElementById('para1').style.fontSize = size + 'px';
+        }
+        function decrease() {
+            size--;
+            document.getElementById('para1').style.fontSize = size + 'px';
+        }
+    </script>
+    <script>
+        // ex7
+        const toggleTheme = () => document.body.classList.toggle("dark-mode");
+    </script>
+</body>
+
+</html>
